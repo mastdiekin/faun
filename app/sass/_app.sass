@@ -57,11 +57,12 @@ div
 					padding: 0
 	&__close
 		+pa
-		top: 75px
-		right: 5vw
+		top: 70px
+		right: 3vmin
 		@extend .hero__close
 		+r(1000)
-			top: 25px
+			top: 15px
+			right: 15px
 
 .hero
 	height: 100vh
@@ -78,7 +79,7 @@ div
 		top: 75px
 		left: 50%
 		transform: translate(-50%, 0)
-		width: calc(100% - 10vw)
+		width: calc(100% - 5vmin)
 		z-index: 1
 		+df
 		justify-content: space-between
@@ -165,7 +166,7 @@ div
 		top: 0
 		bottom: 0
 		background: rgba($b, .8)
-		padding: 75px 5vw
+		padding: 75px 5vmin
 		height: 100%
 		max-height: 100vh
 		overflow-y: auto
