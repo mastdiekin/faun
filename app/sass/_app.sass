@@ -32,6 +32,8 @@ div
 		visibility: hidden
 		transition: opacity $t, visibility $t
 		background: rgba($b, .8)
+		+r(1000)
+			padding: 15px 5vw
 		&.is-active
 			opacity: 1
 			visibility: visible
@@ -56,16 +58,18 @@ div
 		top: 75px
 		right: 5vw
 		@extend .hero__close
+		+r(1000)
+			top: 25px
 
 .hero
 	height: 100vh
-	min-height: 700px
+	min-height: $hero-min
 	overflow: hidden
 	background-color: #202020
 	>
 		.container
 			height: 100vh
-			min-height: 700px
+			min-height: $hero-min
 			+pr
 	&__top
 		+pa
@@ -74,9 +78,11 @@ div
 		z-index: 1
 		+df
 		justify-content: space-between
+		+r(1000)
+			top: 15px
 	&__slider
 		height: 100vh
-		min-height: 700px
+		min-height: $hero-min
 		+pa
 		top: 0
 		left: 0
@@ -97,7 +103,7 @@ div
 			>
 				.container
 					height: 100vh
-					min-height: 900px
+					min-height: $hero-min
 					+df
 					align-items: center
 					padding: 0 20vw
@@ -105,7 +111,7 @@ div
 						padding: 0 15px
 			&__bg
 				height: 100vh
-				min-height: 900px
+				min-height: $hero-min
 				background-size: cover
 				background-repeat: no-repeat
 				background-position: 50% 50%
@@ -119,7 +125,7 @@ div
 				transition: transform .9s linear
 		&-wrapper
 			height: 100vh
-			min-height: 900px
+			min-height: $hero-min
 	// .slick-slider
 	// 	-webkit-user-select: text
 	// 	-khtml-user-select: text
@@ -162,6 +168,8 @@ div
 		opacity: 0
 		visibility: hidden
 		transition: opacity $t, visibility $t
+		+r(1000)
+			padding: 15px 5vw
 		li
 			transform: scale(0.96)
 			transition: transform $t
