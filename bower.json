@@ -1,0 +1,13 @@
+{
+  "name": "faun",
+  "description": "faun template",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "slick-carousel": "^1.8.1",
+    "animate.css": "^3.5.2",
+    "waypoints": "^4.0.1",
+    "svg4everybody": "^2.1.9",
+    "jquery": "^3.3.1"
+  }
+}
